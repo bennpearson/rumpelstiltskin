@@ -6,12 +6,13 @@
  * 
  */
 
+
 /****************************************************************************************************
  * General
  */
 body {
-  background: #ffffff url(../gfx/background.jpg);
-	font-family: Helvetica, Arial, sans-serif;
+  background: #ffffff url(../images/book_background.jpg);
+	font-family:  "BodoniSvtyTwoITCTT-Book", Times, serif;
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
