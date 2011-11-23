@@ -1,21 +1,32 @@
-/*
- * Baker Ebook Framework - Basic Book
- * last update: 2011-10-10
- * 
- * Copyright (C) 2011 by Davide S. Casali <folletto AT gmail DOT com>
- * 
- */
-
 
 /****************************************************************************************************
  * General
  */
 body {
-  background: #ffffff url(../images/book_background.jpg);
-	font-family:  "BodoniSvtyTwoITCTT-Book", Times, serif;
-	font-size: 16px;
+	background: #ffffff url(../gfx/book_background.jpg) no-repeat;
+	font-family: "Hoefler text", "HoeflerText-Regular", "HoeflerText-Italic", "HoeflerText-Black", "HoeflerText-BlackItalic", "Palatino", serif;
+	font-variant-ligatures: common-ligatures;
+	font-size: 18px;
 	margin: 0;
 	padding: 0;
+	letter-spacing: 0px;
+}
+
+article {
+	min-height: 1024px;
+	width: 768px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+section{
+	position:relative;
+	min-height: 1024px;
+	overflow: hidden;
+	margin: 0 auto;
+	width:450px;
 }
 
 a {
@@ -27,14 +38,30 @@ a {
  */
 p, ul, ol {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 30px;
+  text-shadow: 0px 1px 2px #fff;
+}
+
+.goldtext{
+}
+	
+	.masked{
+background: url(../gfx/paint.png) repeat, white;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-animation-name: masked-animation;
+-webkit-animation-duration: 40s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes masked-animation {
+0% {background-position: left bottom;}
+100% {background-position: right bottom;}
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "BodoniSvtyTwoITCTT-Book", Times, serif;
   font-weight: normal;
   text-align: center;
-  
   border: 0;
   margin: 0;
   padding: 0;
@@ -48,16 +75,9 @@ h1 {
   height: 264px;
   position: relative;
 }
-h1 div {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  margin: 0 0 20px;
-}
 
 h2 {
   font-size: 50px;
-  letter-spacing: -2px;
   margin: 8px 0 2px;
   padding: 5px 0 2px;
 }
@@ -65,6 +85,10 @@ h2 {
 ul, ol {
   line-height: 1.25em;
 }
+
+/****************************************************************************************************
+ * Images
+ */
 
 img.right {
   float: right;
@@ -75,37 +99,13 @@ img.right {
 /****************************************************************************************************
  * Pages
  */
-#page {
-  background: #ffffff url(../gfx/background.jpg);
-  min-height: 1024px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-/****** Blood */
-#blood {
-  background: transparent url(../gfx/blood.png) no-repeat;
-  width: 17px;
-  height: 55px;
-  
-  position: absolute;
-  top: 0;
-  right: 20px;
-  
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-.blood-drop {
-  background: transparent url(../gfx/blood-drop.png) no-repeat;
-  display: block;
-  width: 10px;
-  height: 26px;
-}
+ 
 
 
 /****************************************************************************************************
  * Book Cover
  */
+ 
 #page.cover img.central {
   display: block;
   margin: 70px auto 50px;

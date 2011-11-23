@@ -551,7 +551,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rumpelstiltskin_Prefix.pch;
 				INFOPLIST_FILE = "Rumpelstiltskin-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Rumpelstiltskin;
 				SDKROOT = iphoneos;
@@ -571,7 +571,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rumpelstiltskin_Prefix.pch;
 				INFOPLIST_FILE = "Rumpelstiltskin-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Rumpelstiltskin;
 				SDKROOT = iphoneos;
@@ -609,7 +609,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Rumpelstiltskin_Prefix.pch;
 				INFOPLIST_FILE = "Rumpelstiltskin-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Rumpelstiltskin;
 				SDKROOT = iphoneos;

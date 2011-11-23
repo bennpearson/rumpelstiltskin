@@ -3,9 +3,15 @@
     <head>
         <title>Rumpelstiltskin</title>
         <meta name="viewport" content="width=768; initial-scale=1.0;"/>
-        <link rel="stylesheet" type="text/css" href="css/book.css">
+        <link rel="stylesheet" type="text/css" href="css/book.css" />
+        
+		<!--Ligature.js-->
+		<script type="text/javascript" src="js/ligature.js"></script>
+		<script type="text/javascript">
+			<body onload="ligature();" />
+        </script>
     </head>
-    <body id="cover">
+    <body onload="ligature(true);">
         <article>
             <section>
                 <p>Once there was a miller who was poor, but who had a beautiful daughter.</p>

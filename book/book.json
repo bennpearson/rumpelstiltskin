@@ -10,7 +10,7 @@
     "zoomable": false,
 
     "-baker-background": "#000000",
-    "-baker-vertical-bounce": true,
+    "-baker-vertical-bounce": false,
     "-baker-index-height": 202,
     "-baker-media-autoplay": true,
     "-baker-background-image-portrait": "book/gfx/background-portrait.png",
