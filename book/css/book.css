@@ -3,13 +3,14 @@
  * General
  */
 body {
-	background: #ffffff url(../gfx/book_background.jpg) no-repeat;
+	background: #e2e0ce url(../gfx/book_background.jpg) no-repeat;
 	font-family: "Hoefler text", "HoeflerText-Regular", "HoeflerText-Italic", "HoeflerText-Black", "HoeflerText-BlackItalic", "Palatino", serif;
 	font-variant-ligatures: common-ligatures;
 	font-size: 18px;
 	margin: 0;
 	padding: 0;
 	letter-spacing: 0px;
+	color:#390500;
 }
 
 article {
@@ -37,24 +38,53 @@ a {
  * Typography
  */
 p, ul, ol {
-  font-size: 18px;
-  line-height: 30px;
-  text-shadow: 0px 1px 2px #fff;
+font-size: 18px;
+font-weight:normal;
+line-height: 28px;
+text-shadow: 0px 1px 2px #f8f8f8;
+background: #000;
+-webkit-text-fill-color: rgba(57, 5, 0, 0.8);
+-webkit-background-clip: text;
+overflow:visible;
 }
 
-.goldtext{
+p span.ligature{
+	color:#9d0000;
+}
+
+
+p:first-letter {font-size: 110%;  }
+p:first-line {font-size: 180%; font-variant:small-caps; line-height:33px;}
+
+p:first-child:first-letter {font-size: 110%;  }
+
+/* image 506 x 232*/
+.dropcap_t, .dropcap_a {
+background: transparent url(../gfx/illuminated.jpg) no-repeat scroll 0 0;
+float: left;
+font-size: 1px;
+text-indent: -9999px !important;
+height: 74px;
+width: 68px;
+margin-right:10px;
+}
+
+.dropcap_t {
+background-position: -218px -158px;
 }
 	
-	.masked{
-background: url(../gfx/paint.png) repeat, white;
+.goldtext p{
+text-shadow: 0px 1px 122px #fff;
+background: url(../gfx/goldenstraw.png) repeat, #390500;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
--webkit-animation-name: masked-animation;
+-webkit-animation-name: gold-animation;
 -webkit-animation-duration: 40s;
 -webkit-animation-iteration-count: infinite;
 -webkit-animation-timing-function: linear;
 }
-@-webkit-keyframes masked-animation {
+
+@-webkit-keyframes gold-animation {
 0% {background-position: left bottom;}
 100% {background-position: right bottom;}
 }
