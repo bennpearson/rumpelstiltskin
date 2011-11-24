@@ -22,13 +22,7 @@ article {
 	position: relative;
 }
 
-section{
-	position:relative;
-	min-height: 1024px;
-	overflow: hidden;
-	margin: 0 auto;
-	width:450px;
-}
+section{}
 
 a {
   color: #b50303;
@@ -46,6 +40,8 @@ background: #000;
 -webkit-text-fill-color: rgba(57, 5, 0, 0.8);
 -webkit-background-clip: text;
 overflow:visible;
+margin-right: 190px;
+margin-left: 190px;
 }
 
 p span.ligature{
@@ -59,18 +55,36 @@ p:first-line {font-size: 180%; font-variant:small-caps; line-height:33px;}
 p:first-child:first-letter {font-size: 110%;  }
 
 /* image 506 x 232*/
-.dropcap_t, .dropcap_a {
+.dropcap_a, .dropcap_t1, .dropcap_t2, .dropcap_t3, .dropcap_s, .dropcap_y {
 background: transparent url(../gfx/illuminated.jpg) no-repeat scroll 0 0;
 float: left;
 font-size: 1px;
 text-indent: -9999px !important;
 height: 74px;
-width: 68px;
+width: 69px;
 margin-right:10px;
 }
 
-.dropcap_t {
-background-position: -218px -158px;
+.dropcap_a {
+background-position: -1310px 0px;
+-webkit-transform: rotate(180deg);
+}
+
+.dropcap_t1 {
+background-position: -1751px 0px;
+}
+.dropcap_t2 {
+background-position: -1237px 0px;
+}
+.dropcap_t3 {
+background-position: -1527px 0px;
+/*background-position: -1600px 0px;
+height: 74px;
+width: 75px;*/
+}
+
+.dropcap_y {
+background-position: -1456px 0px;
 }
 	
 .goldtext p{
@@ -98,17 +112,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  border-bottom: 1px solid #cf0000;
-  color: #cf0000;
-  font-size: 70px;
-  
-  height: 264px;
-  position: relative;
+	margin-top: 40px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 50px;
-  margin: 8px 0 2px;
+  font-size: 70px;
+  margin: 60px 0 60px 0;
+  padding: 5px 0 2px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 8px 0 30px;
+  padding: 5px 0 2px;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 200px 0 20px;
+  padding: 5px 0 2px;
+}
+
+h5 {
+  font-size: 14px;
+  margin: 8px 0 30px;
   padding: 5px 0 2px;
 }
 
@@ -120,10 +148,34 @@ ul, ol {
  * Images
  */
 
+
 img.right {
   float: right;
-  margin: 8px -100px 8px 25px;
-  padding: 15px 0 15px 0;
+}
+
+img.left {
+  float: left;
+}
+
+img.center {
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+
+img.weep {
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:-1;
+}
+
+img.messenger {
+	position:absolute;
+	top:300px;
+	right:0;
+	z-index:-1;	
 }
 
 /****************************************************************************************************
