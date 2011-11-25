@@ -83,8 +83,33 @@ height: 74px;
 width: 75px;*/
 }
 
+.dropcap_s {
+background-position: -1165px 0px;
+}
+
 .dropcap_y {
 background-position: -1456px 0px;
+}
+
+/* image 506 x 232*/
+.dropcap_o{
+background: transparent url(../images/1a.png) no-repeat scroll 0 0;
+float: left;
+font-size: 1px;
+text-indent: -9999px !important;
+height: 252px;
+width: 252px;
+margin-left:-110px;
+margin-right:10px;
+}
+
+/* image 506 x 232*/
+.titlelogo{
+background: transparent url(../images/cover-image-title.png) no-repeat scroll 0 0;
+text-indent: -9999px !important;
+height: 106px;
+width: 571px;
+margin: 10px auto;
 }
 	
 .goldtext p{
