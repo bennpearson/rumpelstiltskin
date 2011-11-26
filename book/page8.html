@@ -4,8 +4,13 @@
         <title>Rumpelstiltskin</title>
         <meta name="viewport" content="width=768; initial-scale=1.0;"/>
         <link rel="stylesheet" type="text/css" href="css/book.css">
+		<!--Ligature.js-->
+		<script type="text/javascript" src="js/ligature.js"></script>
+		<script type="text/javascript">
+			<body onload="ligature();" />
+        </script>
     </head>
-    <body id="cover">
+    <body onLoad="ligature(true);">
         <article>
             <section>
             	<img class="center" src="images/8a.jpg" alt="Miller's Daughter" />
@@ -13,7 +18,7 @@
 				the next I'll have the young queen's child.<br>
 				Ha, glad am I that no one knew<br>
 				that Rumpelstiltskin I am styled.</q></p>
-            <section>
+            </section>
         </article>
     </body>
 </html>

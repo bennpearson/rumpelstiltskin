@@ -4,17 +4,24 @@
         <title>Rumpelstiltskin</title>
         <meta name="viewport" content="width=768; initial-scale=1.0;"/>
         <link rel="stylesheet" type="text/css" href="css/book.css">
+		<!--Ligature.js-->
+		<script type="text/javascript" src="js/ligature.js"></script>
+		<script type="text/javascript">
+			<body onload="ligature();" />
+        </script>
     </head>
-    <body id="cover">
+    <body onLoad="ligature(true);">
         <article>
-            <section>
+			<section>
             	<img class="center" src="images/4a.jpg" alt="Manikin makes gold from straw" />
+			</section>
+			<section>
 				<p><a class="dropcap_t3" href="">T</a>he girl knew not how to help herself, and was crying, when the door opened again, and the little man appeared, and said, <q>What will you give me if I spin that straw into gold for you?</q></p>
 
 				<p><q>The ring on my finger,</q> answered the girl.</p>
 
 				<p>The little man took the ring, again began to turn the wheel, and by morning had spun all the straw into glittering gold.</p>
-            <section>
+            </section>
         </article>
     </body>
 </html>

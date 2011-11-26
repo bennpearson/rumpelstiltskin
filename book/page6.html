@@ -4,11 +4,18 @@
         <title>Rumpelstiltskin</title>
         <meta name="viewport" content="width=768; initial-scale=1.0;"/>
         <link rel="stylesheet" type="text/css" href="css/book.css">
+		<!--Ligature.js-->
+		<script type="text/javascript" src="js/ligature.js"></script>
+		<script type="text/javascript">
+			<body onload="ligature();" />
+        </script>
     </head>
-    <body id="cover">
+    <body onLoad="ligature(true);">
         <article>
-            <section>
+        	<section>
                 <img class="right" src="images/6a.jpg" alt="Manikin gives the queen a last chance" />
+            </section>
+            <section>
 				<p><a class="dropcap_a" href="">A</a>nd when the king came in the morning, and found all as he had wished, he took her in marriage, and the pretty miller's daughter became a queen.</p>
 
 				<p>A year after, she brought a beautiful child into the world, and she never gave a thought to the manikin. But suddenly he came into her room, and said, <q>Now give me what you promised.</q></p>
@@ -18,7 +25,7 @@
 				<p>Then the queen began to lament and cry, so that the manikin pitied her.</p>
 
 				<p><q>I will give you three days, time,</q> said he, <a>if by that time you find out my name, then shall you keep your child.</a></p>
-            <section>
+            </section>
         </article>
     </body>
 </html>

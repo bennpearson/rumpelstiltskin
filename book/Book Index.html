@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>A Study In Scarlet</title>
-	<meta name="viewport" content="width=768; initial-scale=1.0;"/>
-	<link rel="stylesheet" type="text/css" href="css/book.css">
-</head>
-<body>
-	<div id="page" class="index">
-		<h1><div>Contents</div></h1>
-		
-		<div class="menu">
-		  <h2>Pages</h2>
-		  <small>Rumpelstiltskin</small>
-		  <ol>
-		    <li><a href="page1.html">Miller meets the king<span class="count">3</span></a></li>
-		    <li><a href="page2.html">Miller's daughter meets the manikin<span class="count">4</span></a></li>
-		    <li><a href="page3.html">The manikin turns straw into gold<span class="count">5</span></a></li>
-		    <li><a href="page4.html">More straw and more gold<span class="count">6</span></a></li>
-		    <li><a href="page5.html">Miller's daughter makes final deal with the manikin to become queen<span class="count">7</span></a></li>
-		    <li><a href="page6.html">The manikin gives the queen a chance to keep her first born<span class="count">8</span></a></li>
-		    <li><a href="page7.html">The Messenger searches for the manikin's name<span class="count">9</span></a></li>
-		    <li><a href="page8.html">The Messenger finds a strange little man dancing in the wood<span class="count">10</span></a></li>
-		    <li><a href="page9.html">Final chance for the queen<span class="count">11</span></a></li>
-		  </ol>
-		</div>
-		
-	</div>
-</body>
+    <head>
+        <title>A Study In Scarlet</title>
+        <meta name="viewport" content="width=768; initial-scale=1.0;"/>
+        <link rel="stylesheet" type="text/css" href="css/book.css">
+		<!--Ligature.js-->
+		<script type="text/javascript" src="js/ligature.js"></script>
+		<script type="text/javascript">
+			<body onload="ligature();" />
+        </script>
+    </head>
+    <body onLoad="ligature(true);">
+        <article>
+            <section>
+                <div id="page" class="index">
+                    <h1><small>Rumpelstiltskin</small></h1>
+                    
+                    <div class="menu">
+                      <h2>Contents</h2>
+                      <ol>
+                        <li><a href="page1.html">Miller meets the King<span class="count">3</span></a></li>
+                        <li><a href="page2.html">Miller's daughter meets the manikin<span class="count">4</span></a></li>
+                        <li><a href="page3.html">The manikin sets to work<span class="count">5</span></a></li>
+                        <li><a href="page4.html">More straw and more gold<span class="count">6</span></a></li>
+                        <li><a href="page5.html">Miller's daughter deals with the manikin<span class="count">7</span></a></li>
+                        <li><a href="page6.html">The Manikin returns for his prize<span class="count">8</span></a></li>
+                        <li><a href="page7.html">The Messenger<span class="count">9</span></a></li>
+                        <li><a href="page8.html">Strange little man<span class="count">10</span></a></li>
+                        <li><a href="page9.html">What's my name?<span class="count">11</span></a></li>
+                      </ol>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </body>
 </html>
+

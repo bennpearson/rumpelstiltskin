@@ -4,8 +4,13 @@
         <title>Rumpelstiltskin</title>
         <meta name="viewport" content="width=768; initial-scale=1.0;"/>
         <link rel="stylesheet" type="text/css" href="css/book.css">
+		<!--Ligature.js-->
+		<script type="text/javascript" src="js/ligature.js"></script>
+		<script type="text/javascript">
+			<body onload="ligature();" />
+        </script>
     </head>
-    <body id="cover">
+    <body onLoad="ligature(true);">
         <article>
             <section>
                 <h1>Brothers Grimm</h1>
@@ -14,7 +19,7 @@
                 <img class="center" src="images/cover-image.png" class="central" />
                 <h4>First published in 1812</h4>	
                 <h5>Illustrated by Walter Crane, H. J. Ford, John B. Gruelle, Arthur Rackham, Charles Robinson and A. H. Watson</h5>
-            <section>
+            </section>
         </article>
     </body>
 </html>
