@@ -202,9 +202,16 @@ img.messenger {
  
 /* windmill and cloud animation */
 
+
+#windmill_perspective{
+	position: absolute;
+-webkit-perspective:300;
+	width: 100px;
+	height: 100px;
+	z-index:-1;
+	}
  
 #sprite_windmill {
-	
 	position:absolute;
 	top: 45px;
 	left: 106px;
@@ -215,6 +222,7 @@ img.messenger {
 	background-repeat: no-repeat;
 	background-position: 0 top;
 	z-index:-1;
+	-webkit-transform: rotateY(40deg);
 	}
  
 .animate_windmill {
@@ -227,11 +235,11 @@ img.messenger {
 	
 @-webkit-keyframes spin {
 	0% {
-		-webkit-transform: rotate(0);
+		-webkit-transform:rotateY(40deg) rotate(0);
 		}
 	
 	100% {
-		-webkit-transform: rotate(1080deg);
+		-webkit-transform:rotateY(40deg) rotate(1080deg);
 		}
 		
 }
