@@ -6,16 +6,66 @@
         <link rel="stylesheet" type="text/css" href="css/book.css">
 		<!--Ligature.js-->
 		<script type="text/javascript" src="js/ligature.js"></script>
-		<script type="text/javascript">
+        		<script type="text/javascript">
 			<body onload="ligature();" />
         </script>
+        <!--
+		<script type="text/javascript">
+
+
+			document.addEventListener('DOMContentLoaded', function(e) {
+				var id1      = document.getElementById('animate_straw1'),
+					id2      = document.getElementById('animate_straw2'),
+					class1   = id1.dataset.ani,
+					class2   = id2.dataset.ani,
+					start1   = document.querySelector('.start1'),
+					stop1    = document.querySelector('.stop1'),
+					start2   = document.querySelector('.start2'),
+					stop2    = document.querySelector('.stop2');
+				start1.addEventListener('click', function(e) {
+					e.preventDefault();
+					id1.className = class1;
+				}, false);
+				stop1.addEventListener('click', function(e) {
+					e.preventDefault();
+					id1.className = '';
+				}, false);
+				start2.addEventListener('click', function(e) {
+					e.preventDefault();
+					id2.className = class2;
+				}, false);
+				stop2.addEventListener('click', function(e) {
+					e.preventDefault();
+					id2.className = '';
+				}, false);
+			}, false);
+			
+var timeoutId = 0;
+
+$('#myElement').mousedown(function() {
+    timeoutId = setTimeout(myFunction, 1000);
+}).bind('mouseup mouseleave', function() {
+    clearTimeout(timeoutId);
+});
+
+        </script>
+        -->
     </head>
     <body onLoad="ligature(true);">
         <article>
 			<section>
-            	<img class="center" src="images/4a.jpg" alt="Manikin makes gold from straw" />
+            	<div id="animate_straw1" class="sprite_straw"></div>
+            	<div id="animate_straw2" class="sprite_straw"></div>
+            	<div id="animate_straw3" class="sprite_straw"></div>
+            	<div id="animate_straw4" class="sprite_straw"></div>
+            	<div id="animate_straw5" class="sprite_straw"></div>
+            	<img class="center" src="images/4a.png" alt="Miller's daughter crying" />
 			</section>
 			<section>
+	<div class="wrapper">
+		<div id="blue" data-ani="animate"></div>
+		<div id="orange" data-ani="animate2"></div>
+	</div>
 				<p><a class="dropcap_t3" href="">T</a>he girl knew not how to help herself, and was crying, when the door opened again, and the little man appeared, and said, <q>What will you give me if I spin that straw into gold for you?</q></p>
 
 				<p><q>The ring on my finger,</q> answered the girl.</p>

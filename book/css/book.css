@@ -6,6 +6,7 @@ body {
 	background: #e2e0ce url(../gfx/book_background.jpg) no-repeat;
 	font-family: "Hoefler text", "HoeflerText-Regular", "HoeflerText-Italic", "HoeflerText-Black", "HoeflerText-BlackItalic", "Palatino", serif;
 	font-variant-ligatures: common-ligatures;
+	text-rendering: optimizeLegibility;
 	font-size: 18px;
 	margin: 0;
 	padding: 0;
@@ -203,6 +204,7 @@ img.messenger {
 
  
 #sprite_windmill {
+	
 	position:absolute;
 	top: 45px;
 	left: 106px;
@@ -477,6 +479,200 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 0% {background-position: left bottom;}
 100% {background-position: right bottom;}
 }
+
+/* straw */
+
+.sprite_straw {
+	background-image: url(../gfx/straw.png);
+	position:absolute;
+	top:120px;
+	left:240px;
+	width:8px;
+	height:98px;
+	z-index:1;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transform-origin:100% 100%;
+	-webkit-animation-timing-function: ease-in-out;
+	}
+	
+#animate_straw1 {
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-name: straw1;
+	}
+#animate_straw2 {
+	-webkit-animation-duration: 1.4s;
+	-webkit-animation-name: straw2;
+	}
+#animate_straw3 {
+	-webkit-animation-duration: 1.6s;
+	-webkit-animation-name: straw3;
+	}
+#animate_straw4 {
+	-webkit-animation-duration: 1.8s;
+	-webkit-animation-name: straw4;
+	}
+#animate_straw5 {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-name: straw5;
+	}
+
+@-webkit-keyframes straw1 {
+	0% {
+		top:320px;
+		left:375px;	
+		opacity: 1;
+		-webkit-transform: rotate(180deg) scale(.7);
+		}
+	10% {
+		}
+	50% {
+		opacity: 1;
+		-webkit-transform: rotate(181deg) scale(.7);
+		}
+	100% {	
+		top:320px;
+		left:375px;
+		opacity: 1;
+		-webkit-transform: rotate(180deg) scale(.7);
+		}
+	}
+@-webkit-keyframes straw2 {
+	0% {
+		top:20px;
+		left:523px;	
+		opacity: 1;
+		-webkit-transform: rotate(180deg) scale(.7);
+		}
+	10% {
+		}
+	50% {
+		opacity: 1;
+		-webkit-transform: rotate(181deg) scale(.7);
+		}
+	100% {	
+		top:20px;
+		left:523px;
+		opacity: 1;
+		-webkit-transform: rotate(180deg) scale(.7);
+		}
+	}
+@-webkit-keyframes straw3 {
+	0% {		
+		top:32px;
+		left:266px;	
+		opacity: 1;
+		-webkit-transform: rotate(-16deg) scale(.7);
+		}
+	10% {
+		}
+	50% {
+		opacity: 1;
+		-webkit-transform: rotate(-17deg) scale(.7);
+		}
+	100% {
+		top:32px;
+		left:266px;
+		opacity: 1;
+		-webkit-transform: rotate(-16deg) scale(.7);
+		}
+	}
+@-webkit-keyframes straw4 {
+	0% {	
+		opacity: 1;
+		-webkit-transform: rotate(-26deg);
+		}
+	10% {
+		}
+	50% {
+		opacity: 1;
+		-webkit-transform: rotate(-27deg);
+		}
+	100% {		
+		opacity: 1;
+		-webkit-transform: rotate(-26deg);
+		}
+	}
+@-webkit-keyframes straw5 {
+	0% {
+		top:120px;
+		left:270px;	
+		opacity: 1;
+		-webkit-transform: rotate(16deg);
+		}
+	10% {
+		}
+	50% {
+		opacity: 1;
+		-webkit-transform: rotate(17deg);
+		}
+	100% {	
+		top:120px;
+		left:270px;
+		opacity: 1;
+		-webkit-transform: rotate(16deg);
+		}
+	}
+
+
+/* Arm */
+
+.sprite_arm {
+	background-color: #000;
+	position:absolute;
+	top:140px;
+	left:380px;
+	width:10px;
+	height:100px;
+	z-index:1;
+	-webkit-animation-iteration-count: 1;
+	-webkit-transform-origin:100% 100%;
+	-webkit-transition: all ease-in-out;
+	}
+	
+#animate_arm1 {
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-name: arm1;
+	}
+#animate_arm2 {
+	-webkit-animation-duration: .4s;
+	-webkit-animation-name: arm2;
+	}
+
+@-webkit-keyframes arm1 {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		}
+	10% {
+		}
+	20% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-webkit-transform: rotate(-45deg);
+		}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-webkit-transform: rotate(0deg);
+		}
+	}
+@-webkit-keyframes arm2 {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		}
+	10% {
+		}
+	20% {
+		}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-webkit-transform: rotate(-45deg)
+		}
+	}
+
+
 
 /****************************************************************************************************
  * Book Cover
