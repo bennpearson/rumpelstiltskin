@@ -33,27 +33,91 @@ a {
 /****************************************************************************************************
  * Typography
  */
+ 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  text-align: center;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	margin-top: 40px;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 70px;
+  margin: 60px 0 60px 0;
+  padding: 5px 0 2px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 8px 0 30px;
+  padding: 5px 0 2px;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 200px 0 20px;
+  padding: 5px 0 2px;
+}
+
+h5 {
+  font-size: 14px;
+  margin: 8px 0 30px;
+  padding: 5px 0 2px;
+}
+
+ul, ol {
+  line-height: 1.5em;
+}
+
 p, ul, ol {
 	font-size: 18px;
 	font-weight:normal;
-	line-height: 30px;
 	text-shadow: 0px 1px 2px #f8f8f8;
 	background: #000;
 	-webkit-text-fill-color: rgba(57, 5, 0, 0.8);
 	-webkit-background-clip: text;
 	overflow:visible;
-	margin-right: 190px;
-	margin-left: 190px;
+	margin: 20px 176px;
+	line-height: 1.5em;
+  	margin-bottom: 1.5em;
+	
+}
+
+q {
+margin-left: -1%;
+quotes: "“" "”";
 }
 
 p span.ligature{
 	color:#9d0000;
 }
 
+
+p.intro {
+	font-size:43px;
+	margin-left: 160px;
+	margin-right: 90px;
+	margin-top:70px;
+	margin-bottom:100px;
+}
+
+p.leading {
+	font-size:28px;
+	margin-bottom:100px;
+}
+
+p.intro:first-child:first-line {font-size: 1em; line-height:1.5em; font-variant:normal;}
+
 /*Gertcha, cowson*/
 
 
-p:first-child:first-line {font-size: 124%; line-height:33px; font-variant:small-caps;}
+p:first-child:first-line {font-size: 1.5em; line-height:1em; font-variant:small-caps;}
 
 /*p:nth-child(2n+1) {font-variant:small-caps;}*/
 
@@ -82,6 +146,7 @@ text-indent: -9999px !important;
 height: 74px;
 width: 69px;
 margin-right:10px;
+margin-top: 6px;
 }
 
 .dropcap_a {
@@ -128,47 +193,25 @@ width: 571px;
 margin: 10px auto;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  text-align: center;
-  border: 0;
-  margin: 0;
-  padding: 0;
+/****************************************************************************************************
+ * pages
+ */
+ 
+.twocol{
+	-webkit-column-count: 2;
+	-webkit-column-gap: 100px;
+	margin: 20px 120px;
+	text-align:justify;
 }
 
-h1 {
-	margin-top: 40px;
-  font-size: 30px;
+.twocol p{
+	margin: 0px;
 }
 
-h2 {
-  font-size: 70px;
-  margin: 60px 0 60px 0;
-  padding: 5px 0 2px;
+#page3 p{
+	margin: 20px 230px 20px 260px; 
 }
 
-h3 {
-  font-size: 18px;
-  margin: 8px 0 30px;
-  padding: 5px 0 2px;
-}
-
-h4 {
-  font-size: 24px;
-  margin: 200px 0 20px;
-  padding: 5px 0 2px;
-}
-
-h5 {
-  font-size: 14px;
-  margin: 8px 0 30px;
-  padding: 5px 0 2px;
-}
-
-ul, ol {
-  line-height: 1.25em;
-}
 
 /****************************************************************************************************
  * Images
@@ -196,12 +239,38 @@ img.messenger {
 	z-index:-1;	
 }
 
+img.wheat{
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:-1;	
+}
+	
+img.rye{
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:-1;	
+}
+
+
 /****************************************************************************************************
  * Animation
  */
  
 /* windmill and cloud animation */
 
+#windmill_wrapper {
+	position:absolute;
+	-webkit-perspective:300;
+	top: 98px;
+	left:80px;
+	overflow:hidden;
+	width:180px;
+	height:180px;
+	background-color: rgba(0, 0, 0, 0);
+	z-index:-1;
+	}
 
 #windmill_perspective{
 	position: absolute;
@@ -213,8 +282,8 @@ img.messenger {
  
 #sprite_windmill {
 	position:absolute;
-	top: 45px;
-	left: 106px;
+	top: 0px;
+	left: 0px;
 	width: 100px;
 	height: 100px;
 	overflow: hidden;
@@ -245,20 +314,10 @@ img.messenger {
 }
 
 
-#windmill_wrapper {
-	position:absolute;
-	top: 60px;
-	left:120px;
-	overflow:hidden;
-	width:180px;
-	height:180px;
-	background-color: rgba(0, 0, 0, 0);
-	}
-
 #sprite_cloud {
 	position:absolute;
-	right:-220px;
-	top:0px;
+	right:-120px;
+	top:20px;
 	width: 100px;
 	height: 100px;
 	overflow: hidden;
@@ -279,13 +338,13 @@ img.messenger {
 @-webkit-keyframes blow {
 	0% {
 		position:absolute;
-		right:-220px;
-		top:0px;
+		right:-120px;
+		top:20px;
 		}
 	100% {
 		position:absolute;
 		right:220px;
-		top:0px;
+		top:20px;
 		}
 }
 
@@ -764,7 +823,7 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
   font-size: 22px;
   text-align: justify;
   text-indent: 1em;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 
