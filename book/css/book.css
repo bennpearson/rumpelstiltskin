@@ -92,6 +92,8 @@ p, ul, ol {
 q {
 margin-left: -1%;
 quotes: "“" "”";
+z-index:1;
+overflow:visible;
 }
 
 p span.ligature{
@@ -139,14 +141,14 @@ p:first-child:first-line {font-size: 1.5em; line-height:1em; font-variant:small-
 
 /* image 506 x 232*/
 .dropcap_a, .dropcap_t1, .dropcap_t2, .dropcap_t3, .dropcap_s, .dropcap_y {
-background: transparent url(../gfx/illuminated.jpg) no-repeat scroll 0 0;
+background: transparent url(../gfx/illuminated.png) no-repeat scroll 0 0;
 float: left;
 font-size: 1px;
 text-indent: -9999px !important;
 height: 74px;
 width: 69px;
 margin-right:10px;
-margin-top: 6px;
+margin-top: 1px;
 }
 
 .dropcap_a {
@@ -197,15 +199,17 @@ margin: 10px auto;
  * pages
  */
  
-.twocol{
+
+ 
+#page2 .twocol{
 	-webkit-column-count: 2;
 	-webkit-column-gap: 100px;
-	margin: 20px 120px;
-	text-align:justify;
+	margin: 100px 120px 2px;
+	height: 670px;
 }
 
-.twocol p{
-	margin: 0px;
+#page2 .twocol p{
+	margin: 0px 0px 1.5em 0px;
 }
 
 #page3 p{
