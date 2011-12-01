@@ -514,8 +514,8 @@ img.rye{
 
 */
 
-/* Golden text without background image 
-	
+/* Golden text without background image */
+/*	
 .goldtext p{
 text-shadow: 0px 1px 122px #fff;
 background-color:#f8f8f8;
@@ -530,10 +530,10 @@ background-color:#f8f8f8;
 0% {background-position: left bottom;background-color:#390500;}
 50% {background-position: right bottom;background-color:#C90;}
 100% {background-position: left bottom;background-color:#390500;}
-}*/
+}
+	*/
 	
-	
-/* Golden text with background image */
+/* Golden text with background image*/
 	
 .goldtext p{
 text-shadow: 0px 1px 122px #fff;
@@ -550,14 +550,12 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 0% {background-position: left bottom;}
 100% {background-position: right bottom;}
 }
-
+ 
 /* straw */
 
 .sprite_straw {
 	background-image: url(../gfx/straw.png);
 	position:absolute;
-	top:120px;
-	left:240px;
 	width:8px;
 	height:98px;
 	z-index:1;
@@ -594,9 +592,9 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 		opacity: 1;
 		-webkit-transform: rotate(180deg) scale(.7);
 		}
-	10% {
-		}
 	50% {
+		top:320px;
+		left:375px;	
 		opacity: 1;
 		-webkit-transform: rotate(181deg) scale(.7);
 		}
@@ -614,9 +612,9 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 		opacity: 1;
 		-webkit-transform: rotate(180deg) scale(.7);
 		}
-	10% {
-		}
 	50% {
+		top:20px;
+		left:523px;		
 		opacity: 1;
 		-webkit-transform: rotate(181deg) scale(.7);
 		}
@@ -634,9 +632,10 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 		opacity: 1;
 		-webkit-transform: rotate(-16deg) scale(.7);
 		}
-	10% {
-		}
-	50% {
+
+	50% {		
+		top:32px;
+		left:266px;	
 		opacity: 1;
 		-webkit-transform: rotate(-17deg) scale(.7);
 		}
@@ -649,16 +648,20 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 	}
 @-webkit-keyframes straw4 {
 	0% {	
+		top:120px;
+		left:240px;
 		opacity: 1;
 		-webkit-transform: rotate(-26deg);
 		}
-	10% {
-		}
-	50% {
+	50% {	
+		top:120px;
+		left:240px;	
 		opacity: 1;
 		-webkit-transform: rotate(-27deg);
 		}
 	100% {		
+		top:120px;
+		left:240px;
 		opacity: 1;
 		-webkit-transform: rotate(-26deg);
 		}
@@ -670,9 +673,9 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 		opacity: 1;
 		-webkit-transform: rotate(16deg);
 		}
-	10% {
-		}
 	50% {
+		top:120px;
+		left:270px;
 		opacity: 1;
 		-webkit-transform: rotate(17deg);
 		}
