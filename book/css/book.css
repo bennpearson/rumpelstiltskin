@@ -195,6 +195,12 @@ width: 571px;
 margin: 10px auto;
 }
 
+ p.rhyme {
+	 font-size: 1.5em; 
+	 line-height:1.5em;
+	 margin: 40px 140px 0 150px;
+	}
+
 /****************************************************************************************************
  * pages
  */
@@ -216,6 +222,14 @@ margin: 10px auto;
 	margin: 20px 230px 20px 260px; 
 }
 
+#page6 section{
+	margin-top: 100px; 
+}
+
+#page8 section{
+	margin-top: 50px; 
+}
+
 
 /****************************************************************************************************
  * Images
@@ -224,6 +238,7 @@ margin: 10px auto;
 
 img.right {
   float: right;
+  margin: 100px 30px 150px 0;
 }
 
 img.left {
@@ -256,6 +271,13 @@ img.rye{
 	right:0;
 	z-index:-1;	
 }
+
+img.irate{	
+position:absolute;
+	bottom:0;
+	right:200px;
+	z-index:-1;	
+	}
 
 
 /****************************************************************************************************
@@ -690,61 +712,94 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 
 /* Arm */
 
+
 .sprite_arm {
-	background-color: #000;
 	position:absolute;
-	top:140px;
-	left:380px;
-	width:10px;
-	height:100px;
-	z-index:1;
-	-webkit-animation-iteration-count: 1;
-	-webkit-transform-origin:100% 100%;
+	z-index:-1;
+	-webkit-animation-iteration-count: infinite;
 	-webkit-transition: all ease-in-out;
 	}
 	
 #animate_arm1 {
-	-webkit-animation-duration: 1.2s;
+	background-image: url(../gfx/arm_right.png) ;
+	background-repeat: no-repeat;
+	-webkit-animation-duration: .2s;
+	width:161px;
+	height:48px;
+	-webkit-transform-origin:0% 50%;
 	-webkit-animation-name: arm1;
+	bottom:340px;
+	right:200px;
 	}
 #animate_arm2 {
-	-webkit-animation-duration: .4s;
+	background-image:url(../gfx/arm_left.png);
+	background-repeat: no-repeat;
+	width:163px;
+	height:53px;
+	-webkit-transform-origin:100% 50%;
+	-webkit-animation-duration: .2s;
 	-webkit-animation-name: arm2;
+	bottom:320px;
+	left:205px;
+
 	}
 
 @-webkit-keyframes arm1 {
 	0% {
-		opacity: 1;
-		-webkit-transform: scale(1);
+		-webkit-transform: rotate(-20deg);
 		}
-	10% {
-		}
-	20% {
-		opacity: 1;
-		-webkit-transform: scale(1);
-		-webkit-transform: rotate(-45deg);
+	50% {		
+		-webkit-transform: rotate(-10deg);
 		}
 	100% {
-		opacity: 1;
-		-webkit-transform: scale(1);
-		-webkit-transform: rotate(0deg);
+		-webkit-transform: rotate(-20deg);
 		}
 	}
 @-webkit-keyframes arm2 {
 	0% {
-		opacity: 1;
-		-webkit-transform: scale(1);
+		-webkit-transform: rotate(-10deg);
 		}
-	10% {
-		}
-	20% {
+	50% {
+		-webkit-transform: rotate(-8deg);
 		}
 	100% {
-		opacity: 1;
-		-webkit-transform: scale(1);
-		-webkit-transform: rotate(-45deg)
+		-webkit-transform: rotate(-10deg);
 		}
 	}
+	
+	
+/* sword.png */
+
+
+.sprite_sword_string {
+	position:absolute;
+	z-index:-1;
+	-webkit-animation-iteration-count: infinite;
+	}
+	
+#animate_sword_string1 {
+	background-image: url(../gfx/sword_string.png) ;
+	background-repeat: no-repeat;
+	-webkit-animation-duration: 1.5s;
+	width:16px;
+	height:69px;
+	-webkit-transform-origin:50% 0%;
+	-webkit-animation-name: string1;
+	bottom:455px;
+	right:60px;
+}
+
+@-webkit-keyframes string1 {
+
+
+	0%   {-webkit-transform:rotate(0deg); }
+	25%  {-webkit-transform:rotate(2deg); -webkit-animation-timing-function: ease-in; }
+	50%  {-webkit-transform:rotate(0deg); }
+	75%  {-webkit-transform:rotate(-2deg); -webkit-animation-timing-function: ease-in;}
+	100% {-webkit-transform:rotate(0deg); }
+}
+
+
 
 
 
