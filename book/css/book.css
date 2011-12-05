@@ -555,7 +555,7 @@ background-color:#f8f8f8;
 }
 	*/
 	
-/* Golden text with background image*/
+/* Golden text with background image
 	
 .goldtext p{
 text-shadow: 0px 1px 122px #fff;
@@ -572,6 +572,8 @@ background: url(../gfx/goldenstraw.png) repeat, #390500;
 0% {background-position: left bottom;}
 100% {background-position: right bottom;}
 }
+
+*/
  
 /* straw */
 
